@@ -1,3 +1,4 @@
+.libPaths("r_libs")
 library(DBI)
 library(RSQLite)
 library(tidyverse)
