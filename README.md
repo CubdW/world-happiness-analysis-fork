@@ -4,16 +4,6 @@ A project using SQL and R to analyze the 2024 World Happiness Report.
 
 ---
 
-## 📁 Files Overview
-
-| File | Description |
-|------|-------------|
-| `WHR2024.csv` / `whr2024.db` | Dataset in CSV and SQLite formats |
-| `initialization.r` | Data prep: split, normalize, etc. |
-| `.bat` files | Run SQL scripts and print outputs in terminal |
-
----
-
 ## 🧠 Requirements
 
 - SQLite
@@ -22,7 +12,8 @@ A project using SQL and R to analyze the 2024 World Happiness Report.
 
 ---
 ## ▶️ Quick Start
-run `initialization.r` and it will download the required libraries and make a .db file based on the .csv file.
+
+ - run `initialization.r` and it will download the required libraries and make a .db file based on the .csv file.
 ---
 
 ### 📊 Execute SQL Queries (with output)
@@ -33,6 +24,16 @@ happiness_index_run.bat
 ```
 
 > These scripts run `.sql` files and display results using `sqlite3`.
+
+---
+
+## 📁 Files Overview
+
+| File | Description |
+|------|-------------|
+| `WHR2024.csv` / `whr2024.db` | Dataset in CSV and SQLite formats |
+| `initialization.r` | Data prep: split, normalize, etc. |
+| `.bat` files | Run SQL scripts and print outputs in terminal |
 
 ---
 
