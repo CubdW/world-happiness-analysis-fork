@@ -1,9 +1,11 @@
+source("src/install_dependencies.r")
 .libPaths("r_libs")
 library(DBI)
 library(RSQLite)
 library(tidyverse)
 library(tidymodels)
 library(tidyclust)
+source("src/create_db.r")
 
 conn <- dbConnect(RSQLite::SQLite(), dbname = "whr2024.db")
 
