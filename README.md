@@ -14,17 +14,16 @@ A project using SQL and R to analyze the 2024 World Happiness Report.
 
 ---
 
+## 🧠 Requirements
+
+- SQLite
+- R
+- Optional: MySQL (if you want to test `knn_predict.sql`)
+
+---
 ## ▶️ Quick Start
-
-### 📦 Initialize Database (SQLite)
-
-Run the following in your terminal or Command Prompt:
-
-```bat
-sqlite3 whr2024.db ".read init_continents_table.sql"
-sqlite3 whr2024.db ".read init_continent_column.sql"
-sqlite3 whr2024.db ".read update_continent_id.sql"
-```
+run `initialization.r` and it will download the required libraries and make a .db file based on the .csv file.
+---
 
 ### 📊 Execute SQL Queries (with output)
 
@@ -47,13 +46,5 @@ happiness_index_run.bat
 - `knn_predict.sql` uses Euclidean distance to find the closest 5 countries to a given input vector.
 
 - `knn_predict.r` uses `tidymodels` and `kknn` to fit and tune a regression model.
-
----
-
-## 🧠 Requirements
-
-- SQLite
-- R
-- Optional: MySQL (if you want to test `knn_predict.sql`)
 
 ---
