@@ -1,4 +1,4 @@
-source("src/initialization.r")
+source("initialization.r")
 
 set.seed(0)
 

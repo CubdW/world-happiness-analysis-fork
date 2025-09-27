@@ -19,3 +19,5 @@ whr <- whr_raw |>
   drop_na(Ladder.score:Explained.by..Perceptions.of.corruption)
 
 whr
+
+system(command = "src\\make_continent_table.bat", invisible = TRUE)
